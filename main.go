@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"openfinance/cmd"
+	"openfinance/configuration/logger"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	logger.NewLogger()
+	cmd.StartHttpServer()
 }
